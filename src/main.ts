@@ -13,8 +13,8 @@ import './assets/main.css'
 import 'nprogress/nprogress.css'
 
 /* vForm 表单构建器 */
-import VForm3 from '@/../lib/vform/designer.umd.js'
-import '../lib/vform/designer.style.css'
+// import VForm3 from '@/../lib/vform/designer.umd.js'
+// import '../lib/vform/designer.style.css'
 
 // import './permission'; // permission control
 
@@ -40,5 +40,5 @@ for (const iconName in ElIcons) {
 app.use(store)
 app.use(router)
 app.use(ElementPlus, { size: 'small', zIndex: 3000 })
-app.use(VForm3)
+// app.use(VForm3)
 app.mount('#app')

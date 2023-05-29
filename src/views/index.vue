@@ -5,29 +5,23 @@ meta:
 </route>
 
 <script setup lang="ts" name="home">
-// import { getPage } from '@/api/login';
-
-// async function pagetext() {
-//   const res = await getPage(123);
-//   // console.log(res);
-// }
+import about from './AboutView.vue'
+import home from './HomeView.vue'
 </script>
 
 <template>
   <div class="home">
-    <div>
-      <div class="">
-        主页面
-      </div>
-      <el-button type="primary">
-        page接口测试
-      </el-button>
-    </div>
+    <about class="flex" />
+    <home class="flex" />
   </div>
 </template>
 
 <style lang="scss" scoped>
 .home {
   width: 100%;
+  display: flex;
+  .flex {
+    flex: 1;
+  }
 }
 </style>

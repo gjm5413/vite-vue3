@@ -69,8 +69,6 @@ function filterChildren(childrenMap, lastRouter = false) {
 const modules = import.meta.glob('@/views/**/*.vue')
 
 function loadView(view) {
-  console.log(view)
-
   let res
   // console.log(view)
   for (const path in modules) {

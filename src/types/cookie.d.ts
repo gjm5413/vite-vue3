@@ -8,11 +8,11 @@
 
 // 下面这种类型声明未完成
 
-declare module 'js-cookie' {
-  interface Cookie {
-    set(key:string, value: string, attributes?: any):void
-    remove(key:string):void
-  }
-  const cookie:Cookie;
-  export default cookie;
-}
+// declare module 'js-cookie' {
+//   interface Cookie {
+//     set(key:string, value: string, attributes?: any):void
+//     remove(key:string):void
+//   }
+//   const cookie:Cookie;
+//   export default cookie;
+// }

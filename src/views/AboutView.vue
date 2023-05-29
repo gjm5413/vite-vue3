@@ -10,24 +10,22 @@
 </route>
 
 <script setup lang="ts" name="about">
-// import HelloWorld from '@/components/HelloWorld.vue';
+import useAppStore from '@/store/modules/app'
 
-// console.log(HelloWorld);
+const appStore = useAppStore()
 </script>
 
 <template>
   <div class="about">
-    <h1>This is an about page</h1>
-    <!-- <component :is="view" /> -->
+    <h1>这里是组件01</h1>
+    {{ `参数为${appStore.val}` }}
+    <el-input v-model="appStore.val" />
+    <button @click="appStore.changeVal(new Date().getTime())">
+      改变参数+++++
+    </button>
   </div>
 </template>
 
 <style>
-@media (min-width: 1024px) {
-  .about {
 
-    display: flex;
-    align-items: center;
-  }
-}
 </style>

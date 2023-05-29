@@ -1,6 +1,7 @@
 <script lang="ts" setup name="Layout">
 import Header from './components/Header/index.vue'
 import Sidebar from './components/Sidebar/index.vue'
+import Tags from './components/Tags/index.vue'
 
 function getRoute(route: any) {
   return route.name
@@ -12,6 +13,7 @@ function getRoute(route: any) {
   <div class="main-container">
     <div class="fixed-header">
       <Header />
+      <Tags />
     </div>
     <section class="">
       <RouterView v-slot="{ Component, route }">
@@ -27,8 +29,6 @@ function getRoute(route: any) {
   margin-left: 230px;
   position: relative;
   .fixed-header {
-
-    height: 50px;
     border-bottom: 1px solid #dcdfe6;
   }
 }

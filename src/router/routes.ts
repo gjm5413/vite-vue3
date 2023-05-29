@@ -33,32 +33,25 @@ const systemRoutes: RouteRecordRaw[] = [
       },
     ],
   },
-  // {
-  //   path: '/system',
-  //   component: () => import('@/layouts/index.vue'),
-  //   meta: {
-  //     breadcrumb: false,
-  //   },
-  //   children: [
-  //     {
-  //       path: 'applicationConfig',
-  //       name: 'ApplicationConfig',
-  //       meta: {
-  //         breadcrumb: false,
-  //       },
-  //       children: [
-  //         {
-  //           path: 'dept',
-  //           name: 'Dept',
-  //           component: () => import('@/views/AboutView.vue'),
-  //           meta: {
-  //             breadcrumb: false,
-  //           },
-  //         },
-  //       ],
-  //     },
-  //   ],
-  // },
+  {
+    path: '/system',
+    component: () => import('@/layouts/index.vue'),
+    meta: {
+      breadcrumb: false,
+    },
+    children: [
+      {
+        path: 'applicationConfig',
+        name: 'ApplicationConfig',
+        meta: {
+          breadcrumb: false,
+        },
+        children: [
+
+        ],
+      },
+    ],
+  },
   // {
   //   path: "/",
   //   name: "home",
