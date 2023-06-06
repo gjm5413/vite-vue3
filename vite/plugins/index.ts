@@ -25,6 +25,9 @@ import createLayouts from './layouts'
 /** 将一些信息注入到页面上以方便调试 */
 import createInspector from './inspector'
 
+/** ejs模版语法 */
+import createEjs from './ejs'
+
 export default function createVitePlugins(viteEnv, isBuild = false) {
   const createVitePlugins: (PluginOption | PluginOption[])[] = [vue()]
   createVitePlugins.push(createBanner())
@@ -35,6 +38,7 @@ export default function createVitePlugins(viteEnv, isBuild = false) {
   createVitePlugins.push(createPages())
   createVitePlugins.push(createLayouts())
   createVitePlugins.push(createInspector())
+  createVitePlugins.push(createEjs(viteEnv))
 
   return createVitePlugins
 }

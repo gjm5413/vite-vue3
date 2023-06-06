@@ -114,10 +114,10 @@ const asyncRoutesByFilesystem = setupLayouts(generatedRoutes.filter((item) => {
   return item.meta?.enabled !== false && item.meta?.constant !== true && item.meta?.layout !== false
 }))
 
-console.log('generatedRoutes', generatedRoutes)
+// console.log('generatedRoutes', generatedRoutes)
 // console.log('composeRoutes', composeRoutes);
 // console.log('constantRoutesByFilesystem', constantRoutesByFilesystem);
-console.log('asyncRoutesByFilesystem', asyncRoutesByFilesystem)
+// console.log('asyncRoutesByFilesystem', asyncRoutesByFilesystem)
 
 export {
   systemRoutes,
